@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Schedule Your Task</h1>
+
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a new task..." />
+            <button id="addTaskBtn" class="add-btn" onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="filters">
+            <div class="filter_by">
+                <button class="filter-btn all active" onclick="filterTasks('all')">All</button>
+                <button class="filter-btn completed" onclick="filterTasks('completed')">Completed</button>
+                <button class="filter-btn pending" onclick="filterTasks('pending')">Pending</button>
+            </div>
+            <button class="filter-btn sort" onclick="sortTasks()">Sort by Newest</button>
+            <button class="filter-btn clear-completed" onclick="clearCompleted()">Clear Completed</button>
+        </div>
+
+        <ul class="task-list" id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
