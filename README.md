@@ -32,7 +32,7 @@ It allows users to add, complete, delete, and filter tasks. The goal of this pro
 ├── index.html        # Main HTML file
 ├── style.css         # Styling for the app
 ├── script.js         # JavaScript logic
-├── task_log.txt      # Task log with development breakdown
+
 ```
 
 ---
